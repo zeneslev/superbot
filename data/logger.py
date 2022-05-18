@@ -37,6 +37,7 @@ while 1:
                 # Result - a writer object
                 # Pass the data in the list as an argument into the writerow() function
                 writer_object.writerow((date,exchange))
+                writer_object.writerow(('Time','Price'))
                 # Close the file object
                 f_object.close()
                 print('file created')
