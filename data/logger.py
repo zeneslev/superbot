@@ -3,8 +3,11 @@ import sys
 from csv import writer
 from time import sleep
 from os.path import exists
+import setproctitle
 
 import datetime
+
+setproctitle.setproctitle(sys.argv[1])
 
 c = cbpro.PublicClient()
 
